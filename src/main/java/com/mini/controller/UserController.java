@@ -16,8 +16,8 @@ import com.mini.entity.ResponseDTO;
 import com.mini.entity.User;
 import com.mini.service.UserService;
 
-@RestController
-@CrossOrigin
+@RestController()
+@CrossOrigin(origins="http://localhost:4200/")
 public class UserController {
 
 	@Autowired
