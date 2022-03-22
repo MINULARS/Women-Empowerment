@@ -16,7 +16,6 @@ import com.mini.entity.ResponseDTO;
 import com.mini.entity.User;
 import com.mini.service.UserService;
 
-@RestController
 
 public class UserController {
 
