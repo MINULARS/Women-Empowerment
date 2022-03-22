@@ -1,8 +1,5 @@
 package com.mini;
 
-package com.lti;
-
-import java.util.Arrays;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -17,10 +14,11 @@ import org.springframework.web.filter.CorsFilter;
 
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.mini","com.mini.entity","com.mini.controller","com.mini.repository","com.mini.service"})
-//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+
 
 public class WomenEmpowermentApplication {
+
+
 
 
 
@@ -47,4 +45,3 @@ SpringApplication.run(WomenEmpowermentApplication.class, args);
  
 
 
-}
