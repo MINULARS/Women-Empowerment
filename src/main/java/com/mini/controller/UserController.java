@@ -17,14 +17,15 @@ import com.mini.entity.User;
 import com.mini.service.UserService;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:4200")
 public class UserController {
 
 	@Autowired
 	private UserService userService;
 
-	@RequestMapping(path = "/user/add", method = RequestMethod.POST)
+	@RequestMapping(value = "/user/add", method = RequestMethod.POST)
 	public String add(@RequestBody User user) {
+		System.out.println("Am here");
 		userService.add(user);
 		return "{\"status\" : \"User Record  Added Successfully!\"}";
 	}

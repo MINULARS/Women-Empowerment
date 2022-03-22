@@ -23,17 +23,22 @@ public class User {
 	private String designation;
 	private Double salary;
 
+	
+
+	public User() {
+
+	}
+
+	
 	public int getId() {
 		return id;
 	}
+
 
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	public User() {
-
-	}
 
 	public Double getMobileNumber() {
 		return mobileNumber;
@@ -97,5 +102,12 @@ public class User {
 
 	public void setSalary(Double salary) {
 		this.salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", username=" + username + ", password=" + password
+				+ ", confirmPassword=" + confirmPassword + ", mobileNumber=" + mobileNumber + ", birthDate=" + birthDate
+				+ ", designation=" + designation + ", salary=" + salary + "]";
 	}
 }
